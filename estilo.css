@@ -1,0 +1,473 @@
+header {
+  background-color: rgb(220, 220, 220);
+}
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: rgb(41, 211, 11);
+  font-size: 1.6em;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: rgb(41, 211, 11);
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 720px) {
+  footer {
+    background-color: rgb(220, 220, 220);
+  }
+  footer .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+  footer .content-foo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  footer a {
+    padding: 5px 12px;
+    padding-bottom: 0%;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+  }
+  footer a:hover {
+    color: rgb(41, 211, 11);
+  }
+  footer h4 {
+    color: rgb(90, 90, 90);
+  }
+  .titulo-final {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(100, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (min-width: 720px) {
+  footer {
+    background-color: rgb(220, 220, 220);
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  footer .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+  }
+  footer .content-foo {
+    text-align: center;
+  }
+  footer .content-foo h4 {
+    color: rgb(90, 90, 90);
+    border-bottom: 3px solid rgb(41, 211, 11);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  footer .content-foo a {
+    color: grey;
+    text-decoration: none;
+  }
+  footer .titulo-final {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(100, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(41, 211, 11);
+}
+button:hover {
+  background-color: rgb(24, 136, 4);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: rgb(41, 211, 11);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 50vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/silos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h1 {
+  color: white;
+}
+
+#quienes-somos .container {
+  text-align: center;
+  padding: 80px 12px;
+}
+
+#productos {
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+#productos .container {
+  padding: 50px 30px;
+}
+#productos h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+#productos p {
+  display: none;
+}
+#productos .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 50px;
+  margin: 10px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/aceite-de-soja-min.jpg);
+}
+
+.carta:last-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/expeller-de-soja-min.jpg);
+}
+
+#asesoramiento .container {
+  text-align: center;
+  padding: 100px 12px;
+}
+#asesoramiento li {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+#soporte .container {
+  text-align: center;
+  padding: 100px 12px;
+}
+#soporte li {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+iframe {
+  padding: 60px;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .hero h1 {
+    font-size: 5em;
+    padding-top: 70px;
+  }
+  .expeller h1 {
+    font-size: 5em;
+    padding-top: 70px;
+  }
+  .aceite h1 {
+    font-size: 5em;
+    padding-top: 70px;
+  }
+  #quienes-somos .container {
+    display: flex;
+    justify-content: center;
+  }
+  #quienes-somos .texto {
+    width: 50%;
+    text-align: initial;
+    max-width: 800px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  #quienes-somos h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  #quienes-somos p {
+    text-align: center;
+  }
+  #quienes-somos .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/soja-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  #productos .programas {
+    display: flex;
+    justify-content: center;
+  }
+  #productos p {
+    display: block;
+  }
+  #productos .carta {
+    padding: 30px;
+    width: 40%;
+  }
+  #asesoramiento .container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  #asesoramiento .texto {
+    width: 50%;
+    text-align: initial;
+    max-width: 800px;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  #asesoramiento li {
+    text-align: center;
+    padding-top: 50px;
+  }
+  #asesoramiento .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/campo-de-soja-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  #soporte .container {
+    display: flex;
+    justify-content: center;
+  }
+  #soporte .texto {
+    width: 50%;
+    text-align: initial;
+    max-width: 800px;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  #soporte li {
+    text-align: center;
+    padding-top: 50px;
+  }
+  #soporte .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/soporte.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(30, 30, 30);
+  }
+  .productos {
+    height: 300px;
+    background-color: rgb(195, 195, 195);
+    margin: 40px;
+    border-radius: 25px;
+  }
+  #aceite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/aceite-de-soja-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #expeller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/expeller-de-soja-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #soporte.container {
+    text-align: center;
+    padding: 100px 12px;
+    padding-bottom: 0%;
+  }
+  #soporte li {
+    margin: 20px 0px;
+    font-weight: bold;
+  }
+}
+.contenedor {
+  padding: 30px 5px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+.contenedor p {
+  padding-bottom: 10px;
+}
+
+.titulo {
+  color: rgb(41, 211, 11);
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.expeller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/expeller-de-soja-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.expeller h1 {
+  color: white;
+}
+
+.aceite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/aceite-de-soja-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aceite h1 {
+  color: white;
+}
+
+#titulo-productos {
+  size: 2em;
+  color: rgb(41, 211, 11);
+  text-align: center;
+  align-items: center;
+}
+
+#texto-productos {
+  text-align: center;
+  padding: 5px 65px;
+}
+
+.boton {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(41, 211, 11);
+  text-decoration: none;
+}
+.boton:hover {
+  background-color: rgb(24, 136, 4);
+}
+
+/*# sourceMappingURL=estilo.css.map */
